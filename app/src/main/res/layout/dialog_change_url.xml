@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent_80"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/uri_dialog_with"
+        android:layout_height="@dimen/uri_dialog_height"
+        android:layout_marginBottom="@dimen/dialogs_margin_bottom"
+        android:background="@drawable/shape_dialog_background"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="3dp"
+            android:text="@string/change_uri" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/uri_url_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/uri_dialog_ed_height"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="30dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/dialog_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="@string/cancel" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/dialog_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:padding="5dp"
+                    android:text="@string/ok" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

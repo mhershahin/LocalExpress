@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_card_height">200dp</dimen>
+    <dimen name="item_card_corner_radius">6dp</dimen>
+    <dimen name="item_card_title_height">50dp</dimen>
+    <dimen name="dialogs_margin_bottom">100dp</dimen>
+    <dimen name="add_dialog_with">300dp</dimen>
+    <dimen name="add_dialog_height">120dp</dimen>
+    <dimen name="add_dialog_ed_height">50dp</dimen>
+    <dimen name="uri_dialog_with">300dp</dimen>
+    <dimen name="uri_dialog_height">200dp</dimen>
+    <dimen name="uri_dialog_ed_height">130dp</dimen>
+</resources>

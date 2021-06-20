@@ -1,0 +1,7 @@
+<resources >
+    <!-- Base application theme. -->
+    <style name="Theme.LocalExpress" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+    </style>
+    <style name="my_dialog"></style>
+</resources>

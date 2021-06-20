@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_card_height"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/item_card_shape"
+        android:gravity="center">
+
+        <LinearLayout
+            android:id="@+id/img_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/liner_et"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/loader_layout"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <com.github.loadingview.LoadingView
+                    android:id="@+id/loader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    app:lv_duration="25"
+                    app:lv_end_color="@color/purple_700"
+                    app:lv_external_radius="18dp"
+                    app:lv_internal_radius="2dp"
+                    app:lv_start_color="@color/purple_500" />
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/item_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liner_et"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_card_title_height"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:padding="5dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/title_et"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
